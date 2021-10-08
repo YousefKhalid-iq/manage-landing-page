@@ -98,8 +98,8 @@
 }
 
 .shadow {
-  filter: brightness(50%);
-  background: rgba(0, 0, 0, 0.5);
+  filter: brightness(65%);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .get-started-btn-desktop {
@@ -109,11 +109,11 @@
 .header-text-cont {
   width: 100%;
   padding-top: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
   background-image: url("images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
-  background-position: 220% 100%;
-  background-size: 70%;
+  background-position: 260% 100%;
+  background-size: 75%;
 }
 
 h1 {
@@ -131,6 +131,7 @@ h1 {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 5%;
+  line-height: 1.7rem;
 }
 
 .get-started-btn {
@@ -146,6 +147,55 @@ h1 {
   color: hsla(13, 100%, 96%, 0.9);
   font-weight: 500;
   font-size: 0.85rem;
+}
+
+.different-h2 {
+  color: hsl(228, 39%, 23%);
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 3%;
+}
+
+.different-p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: hsl(227, 12%, 61%);
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  padding-bottom: 6%;
+}
+
+.points-p {
+  color: hsl(228, 39%, 23%);
+  width: 95%;
+  text-align: left;
+  margin: 12% 5% 3% 5%;
+  padding: 2% 0%;
+  background-color: hsl(13, 100%, 96%);
+  font-weight: 700;
+  border-radius: 2.5rem 0 0 2.5rem;
+}
+
+.points-p span {
+  color: hsl(0, 0%, 98%);
+  padding: 2% 7%;
+  text-align: center;
+  background-color: hsl(12, 88%, 59%);
+  margin-right: 4%;
+  border-radius: 2.5rem;
+
+}
+
+.desc-p {
+  color: hsl(227, 12%, 61%);
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 0.82rem;
+  line-height: 1.5rem;
 }
 
 .attribution { 
