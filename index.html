@@ -6,99 +6,290 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <title>Frontend Mentor | Manage landing page</title>
 </head>
-<body> 
-  <main> 
-    <div class="images-section-mobile">
-      <div class="main-img-cont-mobile"> 
-        <img alt="an image of a woman online" class="main-img-mobile" src="images/illustration-woman-online-mobile.svg">
-      </div> 
-      <div class="pattern-img-cont-mobile">
-        <img alt="an image of a pattern" class="pattern-img-mobile" src="images/bg-pattern-mobile.svg">
-      </div>
-    </div>
-    <div class="box-img-desktop">
-      <img aria-label="hidden" alt="" class="box-img" src="images/illustration-box-desktop.svg">
-    </div>
-    <section class="content-section">
-      <div class="image-section-desktop">
-        <img alt="an image of a woman online" class="main-img-desktop" src="images/illustration-woman-online-desktop.svg">
-      </div>
-      <div class="text-cont">
-        <h1>
-          FAQ
-        </h1>
-        <div class="faq-btn-cont">
-          <div id="faq-btn-1">
-            <div class="btn-cont1">
-              <button id="question1" onclick="show_hide_faq1()">
-                How many team members can I invite?            
-              </button>
-              <img alt="" role="presentation" id="open-arrow1" src="images/icon-arrow-down.svg">
-            </div>
-            <p id="faq-answer1">
-              You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.
-            </p>
+  <body>
+    <main>
+      <div class="nav-bar-desktop">
+        <div class="dark-cont">
+          <div class="header-nav">
+              <div class="header-flex">
+                <a aria-label="logo" href="#">
+                  <img role="presentation" alt="" class="logo-img" src="images/logo.svg">
+                </a>
+                <div class="toggle-on-cont">
+                  <button class="toggle-on">
+                    <img role="presentation" alt="" class="open-icon" src="images/icon-hamburger.svg">
+                  </button>
+                </div>
+                <div class="toggle-off-cont">
+                  <button class="toggle-off">
+                    <img role="presentation" alt="" class="close-icon" src="images/icon-close.svg">
+                  </button>
+                </div>
+              </div>  
+            <img alt="illustration image" class="illustration-img" src="images/illustration-intro.svg">
           </div>
-          <div id="faq-btn-2">
-            <div class="btn-cont2">
-              <button id="question2" onclick="show_hide_faq2()">
-                What is the maximum file upload size?
-              </button>
-              <img alt="" role="presentation" id="open-arrow2" src="images/icon-arrow-down.svg">
-            </div>
-            <p id="faq-answer2">
-              No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
+        </div>
+        <div class="desktop-flex">
+          <div class="menu-container">
+            <ul class="header-links">
+              <li>
+                <a href="#">
+                  Pricing       
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Product       
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  About Us       
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Community
+                </a>
+              </li>
+            </ul>
           </div>
-          <div id="faq-btn-3">
-            <div class="btn-cont3">
-              <button id="question3" onclick="show_hide_faq3()">
-                How do I reset my password?
-              </button>
-              <img alt="" role="presentation" id="open-arrow3" src="images/icon-arrow-down.svg">
-            </div>
-            <p id="faq-answer3">
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.
-            </p>
-          </div>
-          <div id="faq-btn-4">
-            <div class="btn-cont4">
-              <button id="question4" onclick="show_hide_faq4()">
-                Can I cancel my subscription?
-              </button>
-              <img alt="" role="presentation" id="open-arrow4" src="images/icon-arrow-down.svg">
-            </div>
-            <p id="faq-answer4">
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
-          </div>
-          <div id="faq-btn-5">
-            <div class="btn-cont5">
-              <button id="question5" onclick="show_hide_faq5()">
-                Do you provide additional support?  
-              </button>
-              <img alt="" role="presentation" id="open-arrow5" src="images/icon-arrow-down.svg">
-            </div>
-            <p id="faq-answer5">
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
+          <div class="get-started-btn-desktop">
+            <button>
+              Get Started
+            </button>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </footer>
-</body>
-<script src="main.js"></script>
+      <section class="header-text-cont">
+        <h1>
+          Bring everyone together to build better products.
+        </h1>
+        <p class="header-p">
+          Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.
+        </p>
+        <div class="get-started-btn">
+          <button>
+            Get Started
+          </button>
+        </div>
+      </section>
+      <section class="different-section">
+        <h2 class="different-h2">
+          What’s different about Manage?
+        </h2>
+        <p class="different-p">
+          Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams. 
+        </p>
+        <p class="points-p">
+          <span>01</span> Track company-wide progress
+        </p>
+        <p class="desc-p">
+          See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+        <p class="points-p">
+          <span>02</span> Advanced built-in reports
+        </p>
+        <p class="desc-p">
+          Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.
+        </p>
+        <p class="points-p">
+          <span>03</span> Everything you need in one place
+        </p>
+        <p class="desc-p">
+          Stop jumping from one service to another to communicate, store files, 
+          track tasks and share documents. Manage offers an all-in-one team 
+          productivity solution.
+        </p>
+      </section>
+      <section class="opinions-section">
+        <h2 class="opinions-h2">
+          What they’ve said
+        </h2>
+        <div id="opinion-1">
+          <img role="presentation" alt="" class="profile-img" src="images/avatar-anisha.png">
+          <p class="name-p">
+            Anisha Li
+          </p>
+          <p class="info-p">
+            “Manage has supercharged our team’s workflow. The ability to maintain 
+            visibility on larger milestones at all times keeps everyone motivated.”
+          </p>
+        </div>
+        <div id="opinion-2">
+          <img role="presentation" alt="" class="profile-img" src="images/avatar-ali.png">
+          <p class="name-p">
+            Ali Bravo
+          </p>
+          <p class="info-p">
+            “We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much 
+            more focused.”
+          </p>
+        </div>
+        <div id="opinion-3">
+          <img role="presentation" alt="" class="profile-img" src="images/avatar-richard.png">
+          <p class="name-p">
+            Richard Watts
+          </p>
+          <p class="info-p">
+            “Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”
+          </p>
+        </div>
+        <div id="opinion-4">
+          <img role="presentation" alt="" class="profile-img" src="images/avatar-shanai.png">
+          <p class="name-p">
+            Shanai Gough
+          </p>
+          <p class="info-p">
+            “Their software allows us to track, manage and collaborate on our projects 
+            from anywhere. It keeps the whole team in-sync without being intrusive.”
+          </p>
+        </div>
+        <div id="switch-btn-cont">
+          <div id="btn1-cont">
+            <button onclick="toggleFirst()" id="btn1">
+            </button>
+          </div>
+          <div id="btn2-cont">
+            <button onclick="toggleSecond()" id="btn2">
+            </button>
+          </div>
+          <div id="btn3-cont">
+            <button onclick="toggleThird()" id="btn3">
+            </button>
+          </div>
+          <div id="btn4-cont">
+            <button onclick="toggleFourth()" id="btn4">
+            </button>
+          </div>
+        </div>
+        <div class="get-started-btn">
+          <button>
+            Get Started
+          </button>
+        </div>
+      </section>
+      <section class="simplify-section">
+        <h2 class="simplify-h2">
+          Simplify how your team works today.
+        </h2>
+        <div class="get-started-btn-white">
+          <button>
+            Get Started
+          </button>
+        </div>
+      </section>
+      <section class="footer-section">
+        <form action="#">
+          <div class="email-cont">
+            <input class="email-input" type="email" name="email" placeholder="Updates in your inbox…" aria-label="error__message">
+            <label></label>
+            <div class="email-validation" aria-live="assertive">
+              Please insert a valid email
+            </div>
+          </div>
+          <div class="from-btn-cont">
+            <button aria-label="email" type="submit"  class="form-btn">
+                Go
+            </button>
+          </div>
+        </form>
+        <div class="footer-links-cont">
+          <ul class="footer-links1">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                About Us
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-links2">
+            <li>
+              <a href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Community
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-socials">
+          <li>
+            <a aria-label="facebook" href="#">
+              <img role="presentation"  alt="" src="images/icon-facebook.svg">
+            </a>
+          </li>
+          <li>
+            <a aria-label="youtube" href="#">
+              <img role="presentation"  alt="" src="images/icon-youtube.svg">
+            </a>
+          </li>
+          <li>
+            <a aria-label="twitter" href="#">
+              <img role="presentation"  alt="" src="images/icon-twitter.svg">
+            </a>
+          </li>
+          <li>
+            <a aria-label="pinterest" href="#">
+              <img role="presentation"  alt="" src="images/icon-pinterest.svg">
+            </a>
+          </li>
+          <li>
+            <a aria-label="instagram" href="#">
+              <img role="presentation"  alt="" src="images/icon-instagram.svg">
+            </a>
+          </li>
+        </ul>
+        <img role="presentation" alt="" class="logo-footer" src="images/logo-footer.svg">
+        <p class="copyright-p">
+          Copyright 2020. All Rights Reserved
+        </p>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </section>  
+    </main>
+  </body>
+  <script src="main.js"></script>
 </html>
