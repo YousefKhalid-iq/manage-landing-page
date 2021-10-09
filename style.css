@@ -186,7 +186,6 @@ h1 {
   background-color: hsl(12, 88%, 59%);
   margin-right: 4%;
   border-radius: 2.5rem;
-
 }
 
 .desc-p {
@@ -196,6 +195,91 @@ h1 {
   margin: 0 auto;
   font-size: 0.82rem;
   line-height: 1.5rem;
+}
+
+.opinions-h2 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding: 15% 0;
+}
+
+#opinion-1, #opinion-2, #opinion-3, #opinion-4 {
+  width: 90%;
+  margin: 10% auto 5% auto;
+  background-color: hsl(0, 0%, 98%);
+}
+
+#opinion-1 {
+  display: block;
+}
+
+#opinion-2 {
+  display: none;
+}
+
+.select-1 {
+  display: none;
+}
+
+#opinion-3 {
+  display: none;
+}
+
+#opinion-4 {
+  display: none;
+}
+
+.profile-img {
+  width: 65px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 50%;
+  left: 50%;
+}
+
+.name-p {
+  padding-top: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: hsl(228, 39%, 23%);
+  font-weight: 700;
+}
+
+.info-p {
+  padding-bottom: 13%;
+  color: hsl(227, 12%, 61%);
+  font-size: 0.85rem;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+#switch-btn-cont {
+  display: flex;
+  width: 20%;
+  margin: 0 auto 10% auto;
+}
+
+#btn1-cont, #btn2-cont, #btn3-cont, #btn4-cont {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: hsl(12, 88%, 59%);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#btn1 {
+  background-color: hsl(12, 88%, 59%);
 }
 
 .attribution { 
