@@ -6,10 +6,6 @@
 }
 
 .header-nav {
-  
-}
-
-.nav-bar-desktop {
   background-image: url("images/bg-tablet-pattern.svg");
   background-position: -190% 500%;
   background-size: 110%;
@@ -89,6 +85,10 @@
 	margin: 5% auto 0 auto;
 }
 
+.illustration-img-desktop-cont {
+  display: none;
+}
+
 .press {
   visibility: visible;
 }
@@ -151,6 +151,12 @@ h1 {
   color: hsla(13, 100%, 96%, 0.9);
   font-weight: 500;
   font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.get-started-btn button:hover {
+  opacity: 0.7;
 }
 
 .different-h2 {
@@ -199,6 +205,10 @@ h1 {
   margin: 0 auto;
   font-size: 0.82rem;
   line-height: 1.5rem;
+}
+
+.patern-desktop {
+  display: none;
 }
 
 .opinions-section {
@@ -320,6 +330,12 @@ h1 {
   color: hsl(12, 88%, 59%);
   font-weight: 700;
   font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.get-started-btn-white button:hover {
+  color: hsla(12, 88%, 59%, 0.5);
 }
 
 .footer-section {
@@ -371,6 +387,11 @@ form {
   text-transform: uppercase;
   font-size: 0.8rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  filter: brightness(150%);
 }
 
 .email-input:focus {
@@ -389,6 +410,7 @@ form {
   color: hsl(12, 88%, 40%);
   width: 85%;
   margin: 0 auto;
+  font-style: italic;
 }
 
 .email-input:invalid~.email-validation {
@@ -426,6 +448,11 @@ form {
   text-decoration: none;
   color: hsla(0, 0%, 98%, 0.8);
   font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.footer-links1 a:hover, .footer-links2 a:hover {
+  color: hsl(12, 88%, 59%);
 }
 
 .footer-socials {
@@ -441,6 +468,10 @@ form {
 
 .footer-socials a {
   text-decoration: none;
+}
+
+.footer-socials a:hover {
+  filter: invert(0.40) sepia(0.5) saturate(25) hue-rotate(330.4deg) brightness(0.90);
 }
 
 .footer-socials img {
@@ -460,7 +491,410 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+  .header-section-desktop {
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-position: 150% -20%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+  }
 
+  .nav-bar-desktop {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .desktop-flex {
+    display: flex;
+    width: 100%;
+  }
+
+  .header-flex {
+    width: 20%;
+    margin: 0;
+  }
+
+  .logo-img {
+    margin: 0;
+    margin-top: 22px;
+    margin-left: 10%;
+  }
+
+  .header-links {
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 8%;
+  }
+
+  .header-links li {
+    display: inline;
+    padding: 0 2%;
+  }
+
+  .header-links a {
+    transition: 0.3s;
+  }
+
+  .header-links a:hover {
+    color: hsl(227, 12%, 61%);
+  }
+
+  .toggle-on-cont, .toggle-off-cont {
+    display: none;
+  }
+
+  .menu-container {
+    visibility: visible;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .get-started-btn-desktop {
+    display: block;
+    text-align: right;
+    width: 20%;
+    margin-right: 2%;
+  }
+
+  .get-started-btn-desktop button {
+    padding: 12% 16%;
+    background-color: hsl(12, 88%, 59%);
+    box-shadow: 0px 3px 10px hsl(12, 88%, 59%);
+    border: 0;
+    border-radius: 2.5rem;
+    color: hsla(13, 100%, 96%, 0.9);
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .get-started-btn-desktop button:hover {
+    opacity: 0.7;
+  }
+
+  .header-content-section {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-top: 5%;
+  }
+
+  .illustration-img {
+    display: none;
+  }
+
+  .illustration-img-desktop-cont {
+    display: block;
+    width: 50%; 
+  }
+
+  .illustration-img-desktop {
+    display: block;
+    width: 90%;
+    margin: 5% auto 0 auto;
+  }
+
+  .header-text-cont {
+    background-image: none;
+    width: 50%;
+    padding-bottom: 5%;
+  }
+
+  h1 {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .header-p {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .get-started-btn {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .different-section {
+    display: flex;
+  }
+
+  .different-header-cont {
+    width: 50%;
+  }
+
+  .different-h2, .different-p {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .pros-cont {
+    width: 60%;
+  }
+
+  .points-p {
+    background-color: transparent;
+    margin: 0 auto;
+  }
+
+  .points-p span {
+    margin-right: 4%;
+    margin-left: -5%;
+  }
+
+  .desc-p {
+    width: 60%;
+  }
+
+  .patern-desktop {
+    display: block;
+    width: 80%;
+    position: absolute;
+    margin-left: -55%;
+  }
+
+  .opinions-section {
+    position: relative;
+  }
+
+  .opinions-h2 {
+    padding: 5% 0 3% 0;
+  }
+
+  .opinions-cont {
+    display: flex;
+    width: 100%;
+  }
+
+  #opinion-1, #opinion-2, #opinion-3, #opinion-4 {
+    width: 100%;
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .profile-img {
+    position: relative;
+  }
+
+  .name-p {
+    padding: 0;
+  }
+
+  #switch-btn-cont {
+    display: none;
+  }
+
+  .opinions-section .get-started-btn {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .opinions-section .get-started-btn button {
+    padding: 5% 12%;
+  }
+
+  .simplify-section {
+    display: flex;
+    padding: 0;
+    background-image: url("images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -20% 90%;
+  }
+
+  .simplify-h2 {
+    text-align: left;
+    width: 70%;
+    margin: 3% auto 3% auto;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .get-started-btn-white {
+    width: 20%;
+    margin: 5% 0 5% 0;
+  }
+
+  .get-started-btn-white button {
+    padding: 5% 12%;
+  }
+
+  .footer-section {
+    padding-top: 2%;
+    display: grid;
+    grid-template-areas: "logo links links form"
+    "socials links links copyright"
+    "att att att att";
+    width: 100%;
+  }
+
+  form {
+    grid-area: form;
+    margin-bottom: 10%;
+  }
+
+  .logo-footer {
+    grid-area: logo;
+    margin-left: 5%;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    padding: 0;
+    text-align: left;
+    margin-left: 1%;
+  }
+
+  .footer-socials li {
+    width: 20%;
+  }
+
+  .footer-socials img {
+    width: 25px;
+  }
+
+  .footer-links-cont {
+    grid-area: links;
+    padding-top: 0;
+  }
+
+  .copyright-p {
+    grid-area: copyright;
+  }
+
+  .attribution {
+    grid-area: att;
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .get-started-btn-desktop button {
+    padding: 12% 22%;
+  }
+
+  .logo-img {
+    margin-top: 28px;
+  }
+
+  .nav-bar-desktop {
+    width: 90%;
+  }
+
+  .points-p span {
+    margin-left: -4%;
+  }
+
+  .patern-desktop {
+    display: block;
+    width: 75%;
+    position: absolute;
+    margin-left: -55%;
+  }
+
+  .simplify-section {
+    background-position: -10% 80%;
+  }
+
+  form {
+    margin-left: -5%;
+  }
+
+  .copyright-p {
+    text-align: right;
+    margin-right: 16%;
+  }
+
+  .logo-footer {
+    margin-left: 15%;
+  }
+
+  .footer-socials {
+    margin-left: 11%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-section-desktop {
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-position: 120% -100%;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+  }
+
+  .nav-bar-desktop {
+    width: 80%;
+    padding-top: 3%;
+  }
+
+  .logo-img {
+    width: 150px;
+  }
+
+  .header-links {
+    text-align: right;
+  }
+
+  .get-started-btn-desktop button {
+    padding: 10% 20%;
+  }
+
+  h1, .header-p {
+    margin-left: 20%;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .get-started-btn {
+    margin-left: 20%;
+  }
+
+  .illustration-img-desktop-cont {
+    margin-right: 5%;
+  }
+
+  .illustration-img-desktop {
+    margin-right: 5%;
+  }
+
+  .different-h2, .different-p {
+    margin-left: 20%;
+    width: 60%;
+  }
+
+  .different-h2 {
+    font-size: 2rem;
+  }
+
+  .points-p span {
+    margin-left: -2.5%;
+  }
+
+  .patern-desktop {
+    display: block;
+    width: 70%;
+    position: absolute;
+    margin-left: -55%;
+  }
+
+  .simplify-h2 {
+    font-size: 2.5rem;
+    width: 35%;
+    margin: 3% 20% 3% 12%;
+  }
+
+  .get-started-btn-white {
+    margin: 5% 9%;
+  }
 }
 
 .attribution { 
@@ -472,4 +906,3 @@ form {
 	color: hsl(12, 88%, 59%);
   text-decoration: none; 
 }
-
